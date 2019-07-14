@@ -1,7 +1,10 @@
-word=input()
-for u in word:
-    if(u=='a',u=='e',u=='i',u=='o',u=='u'):
+sr=input()
+flag=0
+ab=list('aeiouAEIOU')
+for i in sr:
+    if i in ab:
         print("yes")
+        flag=1
         break
-else:
+if flag==0:
     print("no")
